@@ -59,9 +59,40 @@ mColoring(k);
 int main(){
 
 
-    G[1][2]=G[2][1]=G[2][3]=G[3][2]=G[1][3]=G[3][1]=G[2][5]=G[5][2]=G[1][5]=G[5][1]=G[3][4]=G[4][3]=G[4][5]=G[5][4]=1;
+    //G[1][2]=G[2][1]=G[2][3]=G[3][2]=G[1][3]=G[3][1]=G[2][5]=G[5][2]=G[1][5]=G[5][1]=G[3][4]=G[4][3]=G[4][5]=G[5][4]=1;
+
+    //for the input adjacency matrix
+
+    cout<<"Enter the number of vertex"<<endl;
+    int n;
+    cin>>n;
+    while(n--){
+        int x,y;
+        cin>>x>>y;
+        G[x][y]=G[y][x]=1;
+
+
+    }
+
+
+
 
     mColoring(1);
+
+    /*
+
+    7
+    1 2
+    2 3
+    1 3
+    3 4
+    4 5
+    5 1
+    2 5
+
+
+
+    */
 
 
 
